@@ -3,15 +3,13 @@ package model;
 import lombok.Getter;
 
 /**
- * Hydrogen class.
+ * Time class.
  *
  * @author 09x3086
  */
 @Getter
-public class Hydrogen {
+public class Time {
 
-  Hydrogen() {
-
-  }
+  private Long time;
 
 }
