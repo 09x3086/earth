@@ -7,5 +7,7 @@ package model;
  */
 public class AtomicNucleus {
 
+  Math math;
+
 
 }

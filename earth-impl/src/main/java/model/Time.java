@@ -1,15 +1,19 @@
 package model;
 
-import lombok.Getter;
+import java.math.BigDecimal;
+import lombok.Data;
 
 /**
  * Time class.
  *
  * @author 09x3086
  */
-@Getter
+@Data
 public class Time {
 
-  private Long time;
+  BigDecimal value;
 
+  public Time(Space space, Time time) {
+    this.value = space.getValue().divide(time.getValue(), BigDecimal.ROUND_HALF_UP);
+  }
 }

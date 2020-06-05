@@ -10,6 +10,6 @@ import lombok.Getter;
 @Getter
 public class Light {
 
-  private static final Long speed = 299792458L;
+  private static final Long speed = 299_792_458L;
 
 }

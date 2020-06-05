@@ -1,21 +1,20 @@
 package model;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import lombok.Data;
+
 /**
  * Speed class.
  *
  * @author 09x3086
  */
+@Data
 public class Speed {
 
-  private Long speed;
+  private BigDecimal value;
 
-  /**
-   * Constructor.
-   *
-   * @param space Space
-   * @param time  Time
-   */
   public Speed(Space space, Time time) {
-    this.speed = space.getSpace() / time.getTime();
+    this.value = space.getValue().divide(time.getValue(), RoundingMode.HALF_UP);
   }
 }

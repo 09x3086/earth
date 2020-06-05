@@ -11,8 +11,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="earth" target="1.5" />
-      <module name="earth-impl" target="1.5" />
+      <module name="earth" target="1.8" />
+      <module name="earth-impl" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

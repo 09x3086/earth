@@ -1,15 +1,19 @@
 package model;
 
-import lombok.Getter;
+import java.math.BigDecimal;
+import lombok.Data;
 
 /**
  * Space class.
  *
  * @author 09x3086
  */
-@Getter
+@Data
 public class Space {
 
-  private Long space;
+  private BigDecimal value;
 
+  public Space(Speed speed, Time time) {
+    this.value = speed.getValue().multiply(time.getValue());
+  }
 }
